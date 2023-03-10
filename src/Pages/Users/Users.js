@@ -16,7 +16,7 @@ const Users = () => {
     useEffect(() => {
         axios.get('https://602e7c2c4410730017c50b9d.mockapi.io/users')
             .then((res) => {
-                console.log(res.data);
+                // console.log(res.data);
                 setAllUsers(res.data)
             })
     }, [])
@@ -25,7 +25,7 @@ const Users = () => {
         <div>
             <Container>
                 <Row className='py-5 g-4'>
-                    <Col>
+                    <Col lg={6} className='order-2 order-lg-1'>
                         <div className='border rounded '>
                             <h2 className='text-center pt-2'>User List</h2>
                             <div
@@ -52,7 +52,7 @@ const Users = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={6}>
+                    <Col lg={6} className='order-1 order-lg-2'>
                         <div className='border rounded p-3 h-100'>
                             <h2 className='text-center pt-1'>User Details</h2>
 

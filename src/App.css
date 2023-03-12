@@ -23,3 +23,38 @@
   background: #7447c7;
   color: #fff;
 }
+
+
+.shadow-colored {
+  box-shadow: inset 0px 0px 7px #00e61f40;
+}
+
+.heading {
+  background: #39c790;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.image-wrapper {
+  height: 128px;
+}
+
+@media(max-width: 767px) {
+  .heading {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .avatar-image {
+    width: 80px;
+  }
+
+  .image-wrapper {
+    height: 80px;
+  }
+}
